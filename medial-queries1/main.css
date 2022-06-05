@@ -1,3 +1,56 @@
+html {
+  height: 100%;
+}
+
+
 body {
   background: blanchedalmond;
+  margin: 0;
+  height: 100%;
+}
+
+div {
+  border: 2px solid palevioletred;
+}
+
+.container {
+  display: flex;
+  border-color: yellowgreen;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.a,
+.c {
+  height: 10%;
+  width: 95%;
+}
+
+.b {
+  height: 75%;
+  width: 95%;
+}
+
+@media (min-width: 600px) {
+
+  .container {
+    justify-content: space-around;
+  }
+
+  .a {
+    height: 20%;
+  }
+
+  .b {
+    width: 80%;
+  }
+
+  .c {
+    width: 10%;
+    height: 75%;
+  }
+
 }
